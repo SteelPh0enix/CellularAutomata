@@ -13,14 +13,9 @@ FetchContent_Declare(
 )
 
 function(add_raygui_includes target_name)
-    # Define the include directory
     set(RAYGUI_INCLUDE_DIR "${FETCHCONTENT_BASE_DIR}/raygui-src/src")
-
-    # Check if the target exists
     if(TARGET ${target_name})
-        # Add the include directory to the target
         target_include_directories(${target_name} PRIVATE ${RAYGUI_INCLUDE_DIR})
-        message(STATUS "Added include directory ${RAYGUI_INCLUDE_DIR} to target ${target_name}")
     else()
         message(FATAL_ERROR "Target ${target_name} does not exist.")
     endif()

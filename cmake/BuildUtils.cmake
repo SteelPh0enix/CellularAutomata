@@ -11,3 +11,7 @@ function(enable_all_warnings target)
         )
     endif()
 endfunction()
+
+function(add_lib_includes target)
+    target_include_directories(${target} PUBLIC ${CMAKE_SOURCE_DIR}/lib)
+endfunction()

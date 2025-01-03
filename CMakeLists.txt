@@ -7,4 +7,5 @@ include("SetLanguageStandard")
 include("BuildUtils")
 
 add_subdirectory("deps")
+add_subdirectory("lib")
 add_subdirectory("bin")
