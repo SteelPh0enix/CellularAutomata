@@ -1,4 +1,4 @@
-#include <Raylibs/Raylibs.h>
+#include <raylib.h>
 
 #include <Window/Window.hpp>
 #include <optional>
@@ -14,7 +14,7 @@ int main() {
 
     while (!WindowShouldClose()) {
         BeginDrawing();
-        ClearBackground(GetColor(GuiGetStyle(DEFAULT, BACKGROUND_COLOR)));
+        ClearBackground(GetColor(0x123456FF));
         EndDrawing();
     }
 

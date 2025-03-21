@@ -8,10 +8,10 @@ FetchContent_Declare(
 
 # using `target_link_library` should be preferred over this,
 # use this only for interface libs.
-function(add_raylib_includes target_name)
+function(add_raylib_includes target_name include_type)
     set(RAYLIB_INCLUDE_DIR "${FETCHCONTENT_BASE_DIR}/raylib-src/src")
     if(TARGET ${target_name})
-        target_include_directories(${target_name} INTERFACE ${RAYLIB_INCLUDE_DIR})
+        target_include_directories(${target_name} ${include_type} ${RAYLIB_INCLUDE_DIR})
     else()
         message(FATAL_ERROR "Target ${target_name} does not exist.")
     endif()

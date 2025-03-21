@@ -6,7 +6,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include("SetLanguageStandard")
 include("BuildUtils")
 include("FetchRaylib")
-include("FetchRaygui")
 
 add_subdirectory("lib")
 add_subdirectory("bin")

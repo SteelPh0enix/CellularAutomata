@@ -1,2 +1,2 @@
 add_library(Window INTERFACE)
-add_raylib_includes(Window)
+add_raylib_includes(Window INTERFACE)
