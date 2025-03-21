@@ -1,0 +1,4 @@
+name: Tool usage
+description: Suggest Mistral to use the tool
+---
+Perform an action specified by the next sentences using provided tools. Do not generate anything else, just use a tool according to the provided description. Provided tools are: reading/writing to files, searching web, creating new files and running terminal commands.

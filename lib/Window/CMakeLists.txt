@@ -1,2 +1,2 @@
-add_library(Window INTERFACE)
-add_raylib_includes(Window INTERFACE)
+add_library(Window Window.cpp)
+target_link_libraries(Window raylib)
