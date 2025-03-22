@@ -5,11 +5,11 @@
 
 int main() {
     setup_window(WindowConfig{
-        .title = "Cellular Automata by SteelPh0enix",
+        .title = "Example GUI app",
         .minimalSize = {800, 600},
         .defaultSizeMultiplier = 0.75,
         .maxFps = std::nullopt,
-        .monitor = std::nullopt,
+        .monitor = 0,
     });
 
     while (!WindowShouldClose()) {
