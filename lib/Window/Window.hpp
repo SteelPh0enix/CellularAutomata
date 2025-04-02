@@ -1,6 +1,4 @@
 #pragma once
-#include <raylib.h>
-
 #include <optional>
 #include <string>
 

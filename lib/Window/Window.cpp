@@ -1,5 +1,6 @@
 #include "Window.hpp"
 
+#include <raylib.h>
 #include <spdlog/spdlog.h>
 
 void setup_window(WindowConfig const& config) {
