@@ -1,15 +1,4 @@
-# CellularAutomata
+# Project template
 
-Cellular automata in C++ w/ Raylib
+C/C++ project template with logging and GUI.
 
-Project's filetree:
-
-```text
-/
-├── bin
-│   └── app.cpp  # Code of app's executable file
-├── cmake         # CMake modules
-├── doc           # App's documentation
-├── lib           # App's modules
-└── resources     # External files, like UI styles and images
-```
